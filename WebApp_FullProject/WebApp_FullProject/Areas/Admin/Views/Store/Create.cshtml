@@ -1,0 +1,75 @@
+﻿@model WebApp_FullProject.Models.Store
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <form class="user" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Title)
+            @Html.TextBoxFor(m => m.Title, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Title, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Subtitle)
+            @Html.TextBoxFor(m => m.Subtitle, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Subtitle, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Adress)
+            @Html.TextBoxFor(m => m.Adress, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Adress, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Phone)
+            @Html.TextBoxFor(m => m.Phone, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Phone, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Sunday)
+            @Html.TextBoxFor(m => m.Sunday, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Sunday, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Munday)
+            @Html.TextBoxFor(m => m.Munday, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Munday, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Tuesday)
+            @Html.TextBoxFor(m => m.Tuesday, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Tuesday, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Wednesday)
+            @Html.TextBoxFor(m => m.Wednesday, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Wednesday, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Thursday)
+            @Html.TextBoxFor(m => m.Thursday, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Thursday, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Friday)
+            @Html.TextBoxFor(m => m.Friday, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Friday, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Saturday)
+            @Html.TextBoxFor(m => m.Saturday, null, new { @class = "form-control form-control-user" })
+            @Html.ValidationMessageFor(m => m.Saturday, null, new { @class = "text-danger" })
+        </div>
+        <button class="btn btn-primary btn-user btn-block">Create</button>
+    </form>
+</body>
+</html>
+
